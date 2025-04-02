@@ -1,13 +1,12 @@
-/* Normalize Styles */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;500;700&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 1.7;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #f9f9f9;
     color: #333;
 }
 
@@ -20,6 +19,112 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Header */
+header {
+    text-align: center;
+    border-bottom: 4px solid #e60000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
 
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #e66f00;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
 
+header p {
+    font-size: 1em;
+    color: #777;
+}
 
+/* Main Content Layout */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* Sections */
+section {
+    background: #fff;
+    padding: 15px;
+    border-left: 5px solid #e60000;
+}
+
+section h2 {
+    font-size: 1.8em;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+section ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+section li {
+    margin-bottom: 15px;
+}
+
+section h3 {
+    font-size: 1.3em;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+section p {
+    font-size: 1.1em;
+    font-family: 'Lora', serif;
+}
+
+/* Asides (Side Content) */
+aside {
+    background: #fafafa;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+aside h2 {
+    color: #e60000;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+aside figure {
+    text-align: center;
+}
+
+aside img {
+    max-width: 100%;
+    height: auto;
+}
+
+aside figcaption {
+    font-size: 1em;
+    color: #666;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
