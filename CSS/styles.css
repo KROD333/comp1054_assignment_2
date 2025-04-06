@@ -32,8 +32,8 @@ header h1 {
     font-weight: 100;
     color: #e66f00;
     margin-bottom: 0px;
-    margin-top: 10px;
-    text-transform: uppercase;
+    margin-top: 10px; 
+    text-transform: uppercase; 
 }
 
 header p {
@@ -46,7 +46,7 @@ header p {
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 20px;
+    gap: 20px; 
 }
 
 /* For Sections */
