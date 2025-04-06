@@ -10,7 +10,7 @@ body {
     color: #333;
 }
 
-/* Container */
+/* For the Container */
 #container {
     max-width: 900px;
     margin: 20px auto;
@@ -19,40 +19,64 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Header */
+/* For the Header */
 header {
     text-align: center;
-    border-bottom: 4px solid #e60000;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
 header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5em;
-    font-weight: bold;
+    font-family: 'Bitter', serif;
+    font-size: 6em;
+    font-weight: 100;
     color: #e66f00;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+    margin-top: 10px;
     text-transform: uppercase;
 }
 
 header p {
     font-size: 1em;
     color: #777;
+    margin-right: 30em;
 }
 
-/* Main Content Layout */
+/* The Main Content Layout */
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
 }
 
-/* Sections */
+/* For Sections */
+section:nth-of-type(1) h2 {
+    border-top: 15px solid green;
+}
+section:nth-of-type(2) h2 {
+    border-top: 15px solid rgb(219, 1, 147);
+}
+
+section:nth-of-type(3) h2 {
+    border-top: 15px solid rgb(1, 183, 255);
+}
+
+section:nth-of-type(1) h3 {
+    color: green;
+}
+
+section:nth-of-type(2) h3 {
+    color: rgb(219, 1, 147);
+}
+
+section:nth-of-type(3) h3 {
+    color: rgb(1, 183, 255);
+}
+
 section {
     background: #fff;
-    padding: 15px;
-    border-left: 5px solid #e60000;
+    padding: 10px;
+    margin-right: 0px;
 }
 
 section h2 {
@@ -73,10 +97,16 @@ section li {
     margin-bottom: 15px;
 }
 
+section li::before {
+    content: attr(value); 
+    font-weight: bold; 
+    color: #000000; 
+}
+
 section h3 {
     font-size: 1.3em;
     font-weight: 700;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Gotu', sans-serif;
 }
 
 section p {
@@ -84,7 +114,7 @@ section p {
     font-family: 'Lora', serif;
 }
 
-/* Asides (Side Content) */
+/* For Asides (Side Content) */
 aside {
     background: #fafafa;
     padding: 15px;
@@ -92,7 +122,6 @@ aside {
 }
 
 aside h2 {
-    color: #e60000;
     font-size: 1.4em;
     font-weight: bold;
     font-family: 'Playfair Display', serif;
@@ -114,16 +143,17 @@ aside figcaption {
     margin-top: 5px;
 }
 
-/* Footer */
+/* For The Footer */
 footer {
     text-align: center;
     margin-top: 20px;
+    margin-left: 33em;
     font-size: 0.9em;
     color: #777;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
     main {
         grid-template-columns: 1fr;
     }
